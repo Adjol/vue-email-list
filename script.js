@@ -28,7 +28,7 @@ createApp ({
             .then((printa) => {
 
                 console.log(printa.data.response);
-                
+                this.mailLista.push( printa.data.response);
                 
                 
             });
@@ -37,7 +37,7 @@ createApp ({
 
         }
         //this.mailLista.push( printa.data.response)
-        
+
     },  
 }).mount("#app");
 
