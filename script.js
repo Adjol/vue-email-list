@@ -4,10 +4,13 @@ createApp ({
     data() {
 
         return {
-            mailLista: [],
+
+            mailLista: [
+                
+            ],
             
 
-            // x: console.log(mailLista)
+            
         }
     },
 
@@ -22,20 +25,18 @@ createApp ({
         for (let i = 0; i < 10; i++){
 
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-            .then((print) => {
+            .then((printa) => {
 
-                console.log(print.data.response);
+                console.log(printa.data.response);
                 
                 
                 
             });
             
-            this.mailLista.push({
-                mail: this.print
-            })
+          
 
         }
-
+        //this.mailLista.push( printa.data.response)
         
     },  
 }).mount("#app");
